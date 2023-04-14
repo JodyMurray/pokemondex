@@ -3,6 +3,7 @@
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
+  flex-direction: column;
 }
 
 body {
@@ -38,8 +39,31 @@ body {
   padding-left: 10px;
   border: none;
   color: white;
-  background-color:  rgb(10, 97, 163);
+  background-color: rgb(10, 97, 163);
 }
+
 .TitleSection button:hover {
   cursor: pointer;
+}
+
+.DisplaySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.DisplaySection h4,
+h3 {
+  margin: 5px;
+
+}
+
+.DisplaySection img {
+  width: 200px;
+}
+
+.DisplaySection h2 {
+  border-bottom: 2px solid rgb(240, 232, 199);
+  padding: 10px;
 }
