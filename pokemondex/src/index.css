@@ -1,0 +1,45 @@
+.App {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.TitleSection {
+  background-color: rgb(93, 185, 255);
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.TitleSection input {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid rgb(74, 169, 242);
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.TitleSection button {
+  width: 180px;
+  height: 60px;
+  margin: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  padding-left: 10px;
+  border: none;
+  color: white;
+  background-color:  rgb(10, 97, 163);
+}
+.TitleSection button:hover {
+  cursor: pointer;
+}
