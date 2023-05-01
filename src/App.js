@@ -2,6 +2,7 @@ import { useState } from "react";
 import Axios from "axios";
 
 import { TitleSection } from "./components/TitleSection";
+import { DisplaySection } from "./components/DisplaySection";
 
 function App() {
   const [pokemonName, setPokemonName] = useState("");
@@ -40,21 +41,10 @@ function App() {
         setPokemonName={setPokemonName}
         searchPokemon={searchPokemon}
       />
-      <div className="DisplaySection">
-        {!pokemonChosen ? (
-          <h2> Please choose a Pokemon</h2>
-        ) : (
-          <>
-            <h2>{pokemon.name}</h2>
-            <img src={pokemon.img} />
-            <h3>Species: {pokemon.species}</h3>
-            <h3>Type: {pokemon.type}</h3>
-            <h4>HP: {pokemon.hp}</h4>
-            <h4>Attack: {pokemon.attack}</h4>
-            <h4>Defence: {pokemon.defence}</h4>
-          </>
-        )}
-      </div>
+      <DisplaySection
+        pokemon={pokemon}
+        pokemonChosen={pokemonChosen}
+      />
     </div>
   );
 }
